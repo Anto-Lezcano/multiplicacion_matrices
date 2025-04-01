@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # Importar CORS
+from flask_cors import CORS  
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})  # Habilitar CORS para todas las rutas
+CORS(app, resources={r"/*": {"origins": "*"}})  
 
 @app.route('/mul', methods=['POST'])
 def suma():
